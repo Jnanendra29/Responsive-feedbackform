@@ -1,0 +1,171 @@
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(199, 238, 175), rgb(61, 212, 61));
+}
+
+.form-container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  height: fit-content;
+  background-color: white;
+  padding: 13px;
+  row-gap: 19px;
+  border-radius: 10px;
+}
+
+.form-header {
+  font-weight: bold;
+  color: green;
+}
+
+.description {
+  font-size: medium;
+  text-transform: capitalize;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.about input[type="text"],
+input[type="email"] {
+  width: 95%;
+  height: 26px;
+  font-size: 15px;
+  padding: 0px 5px;
+  color: green;
+}
+
+.about select {
+  height: 35px;
+  width: 95%;
+  padding: 0px 5px;
+}
+
+.about label {
+  font-weight: bold;
+}
+
+.feedback {
+  width: 45%;
+}
+
+.age-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  padding: 10px;
+}
+
+.coding-proficiency {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.coding-contest {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.padding-utility {
+  padding: 0px 8px;
+}
+
+.proficiency-header {
+  font-weight: bold;
+}
+
+.coding-contest p {
+  font-weight: bold;
+}
+
+.passion p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.challenges p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dsa p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.btn {
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(0 169 0);
+  border: none;
+}
+
+.textAreaContent {
+  width: 70%;
+}
+
+::placeholder {
+  color: rgb(1, 166, 1);
+  opacity: 1; 
+}
+
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-container{
+    margin: 15px;
+    row-gap: 10px;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about{
+    width: 100%;
+  }
+
+  .feedback{
+    width: 100%;
+  }
+
+  .textAreaContent{
+    width: 100%;
+  }
+}
